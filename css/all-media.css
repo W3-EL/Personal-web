@@ -1,0 +1,327 @@
+/* Start meduim screen view */
+
+@media (max-width:840px) and (min-width:700px ) {
+    .home div:nth-child(2) {
+        transform: translateY(0) translateX(100%);
+    }
+    .home div:last-child {
+        transform: translateY(0) translateX(-100%);
+    } 
+    .home div:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(to left , transparent , #bb6cdc , transparent);
+    }  
+} 
+
+/* End meduim screen view */
+
+/* Start media of about me section  */
+
+@media (max-width:1200px)  {
+
+    .about > .img {
+        width: 200px;
+        height: 250px;
+    }    
+    .about > .img img {
+        width: 150px;
+        height: 200px;
+        transform: rotateZ(-90deg);
+    }
+    .info div {
+        grid-template-columns: repeat(auto-fill , minmax(130px , 1fr));
+    }
+}
+@media (max-width:1040px)  {
+
+    .about > .img {
+        width: 150px;
+        height: 200px;
+    }
+        
+    .about > .img img {
+        width: 100px;
+        height: 150px;
+        transform: rotateZ(-90deg);
+    }
+    .info div {
+        grid-template-columns: repeat(auto-fill , minmax(100px , 1fr));
+    }
+    .info div p {
+        margin: 20px 0 0 20px;
+    }
+    .about > p {
+        font-size: 13px;
+    }
+    .about > p > b{
+        font-size: 17px;
+    }
+}
+@media (max-width:800px)  {
+    .info div {
+        grid-template-columns: repeat(auto-fill , minmax(70px , 1fr));
+    }
+    .info div h3 {
+        font-size: 15px;
+    }
+    .info div p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:700px)  {
+
+    .about > .img {
+        width: 200px;
+        height: 250px;
+    }    
+    .about > .img img {
+        width: 150px;
+        height: 200px;
+        transform: rotateZ(-90deg);
+    }
+    .info div {
+        grid-template-columns: repeat(auto-fill , minmax(65px , 1fr));
+    }
+}
+@media (max-width:540px){
+    .about {
+        height: 100vh;
+    }
+
+    .about > .img {
+        width: 150px;
+        height: 200px;
+        left: 48%;
+        transform: translatex(-50%) rotateZ(90deg) ;
+        float: none;
+    }
+    .about > .img:hover , .about > .img:focus {
+        transform: translatex(-50%) scale(1.3) rotateZ(90deg) translateY(10%);
+    }
+    
+    .about > .img img {
+        width: 100px;
+        height: 150px;
+        transform: rotateZ(-90deg);
+    }
+    .info div {
+        grid-template-columns: repeat(auto-fill , minmax(45px , 1fr));
+    }
+    .info div p {
+        margin: 20px 0 0 40px;
+    }
+    .about > p {
+        width: 100%;
+        margin-top: -32px;
+    }
+    .about > p > b{
+        font-size: 17px;
+    }
+    .about > h1 {
+        font-size: 30px;
+        margin-bottom: 7vh;
+    }
+}
+@media (max-width:370px) {
+    .about {
+        height: 100vh ;
+    }
+    .about > h1::before {
+        left: 43px;
+    }
+    .about:hover > h1::before {
+        transform: scalex(8);
+        opacity: 100%;
+    }
+    .about > h1 {
+        font-size: 25px;
+    }
+    .info div {
+        grid-template-columns: repeat(auto-fill , minmax(31px , 1fr));
+    }
+    .info div h3 {
+        font-size: 12px;
+    }
+    .about > .img {
+        width: 100px;
+        height: 150px;
+        margin-top: 35px;
+    }
+    .about > .img img {
+        width: 75px;
+        height: 100px;
+    }
+    .about > .img:hover, .about > .img:focus {
+        transform: translatex(-25%) scale(1.2) rotateZ(90deg) translateY(10%);
+    }
+    .info div p {
+        margin: 13px 0 0 40px;
+        font-size: 10px;
+        width: 120px;
+    }
+    .info > h1 {
+        font-size: 20px;
+        width: 120px;
+        height: 32px;
+    }
+    .info > h1::before {
+        border: 12px solid black;
+        border-color: #9995 transparent transparent transparent;
+        bottom: -25px;
+    }
+    .about > p {
+        font-size: 11px;
+    }
+}
+
+/* End media of about me section  */
+
+/* Start media to the small screen  */
+
+@media(max-width:700px){ 
+
+    header {
+        height: 8vh;
+    }
+    
+    header img[src="images/logo.png"] {
+        position: absolute;
+        top: -1vh;
+    }
+    
+    header li{
+        display: none;
+    }   
+    header img[src="images/menu.png"] {
+        display: inline;
+        width: 6vw;
+    }
+    header img[src="images/menu.png"]:hover {
+        opacity: 70%;
+    }
+    .social {
+        width: 57vw !important;
+    }
+    
+    .social div:first-child {
+        margin-left: -30px;
+    }
+    .general {
+        background-size:contain;
+        background-position: center;
+    }
+    
+    .container {
+        top: 8vh;
+        width: 80vw;
+    }
+    
+    .welcome{
+        top: -5vh;
+        width: 60%;
+        height: 30vh;
+    
+    }
+    .welcome img:first-child {
+        width: 50vw;
+    }
+    .home{
+        top: 35vh;
+        height: 100vh;
+    }
+    .home div:nth-child(2) {
+        transform: translateY(0) translateX(100%);
+    }
+    @keyframes translate-home {
+        100%{
+            transform: translateY(0%) translateX(0);
+        }
+    }
+    .home div:last-child {
+        transform: translateX(-100%);
+    }
+    footer{
+        height: 150vh;
+    }
+    footer img{
+        height: 31%;;
+    }
+    footer .right{
+        position: relative;
+        width: 100%;
+        height: 470px;
+    }
+    footer .right .contact {
+        margin-left: 20px;
+    }
+    footer .right fieldset {
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+    footer .done {
+        bottom: 0;
+        width: 90%;
+        margin-left: 5vw;
+    }
+    footer .right div > input {
+        width: 100%;
+    }
+    }
+    
+    @media(max-width:524px){ 
+    
+    .home div:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(to left , transparent , #bb6cdc , transparent);
+    }
+    }
+    
+    /* End media to the small screen  */
+    
+    /* Start media to horizontal screen */
+    
+    @media (max-height:500px){
+        .general{
+            height: 400vh;
+        }
+        header{
+            height: 15vh;
+        }
+        .menu > div {
+            padding-top: 25px;
+        }
+        .social{
+            margin-top: 0;
+        }
+        .home {
+            height: 100vh;
+        }
+        footer{
+            height: 200vh;
+        }
+        .right {
+            height:calc(100%/2);
+        }
+        .done {
+            bottom: 70px !important;
+        }
+        .home div {
+            height: 50vh;
+        }
+        .about {
+            bottom: 55vh;
+        }
+
+    }
+    
+    /* End media to horizontal screen */
+    
