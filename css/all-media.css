@@ -177,7 +177,17 @@
     .about > p {
         font-size: 11px;
     }
+
 }
+@media (max-height:700px) {
+    .about {
+      height: 130vh;
+      transform: translateY(20vh);
+    }
+    
+}
+
+
 
 /* End media of about me section  */
 
